@@ -18,6 +18,6 @@ class Customer extends Authenticatable
 
     public function district()
     {
-        return $this->belongsTo(District::class);
+        return $this->belongsTo(District::class)->withDefault();
     }
 }

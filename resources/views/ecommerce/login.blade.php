@@ -39,7 +39,7 @@
 						<form class="row login_form" action="{{ route('customer.post_login') }}" method="post" id="contactForm" novalidate="novalidate">
 							@csrf
 							<div class="col-md-12 form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" value="{{ old('email') }}">
 							</div>
 							<div class="col-md-12 form-group">
 								<input type="password" class="form-control" id="password" name="password" placeholder="******">

@@ -8,7 +8,7 @@ class Order extends Model
 {
     protected $guarded = [];
     protected $appends = ['status_label', 'ref_status_label', 'commission', 'total'];
-    
+
     public function district()
     {
         return $this->belongsTo(District::class);
@@ -59,7 +59,7 @@ class Order extends Model
 
     public function customer()
     {
-        return $this->belongsTo(Customer::class);
+        return $this->belongsTo(Customer::class)->withDefault();
     }
 
     public function return()
