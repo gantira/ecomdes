@@ -53,6 +53,7 @@
 						@endif
 						<li><a href="{{ route('customer.dashboard') }}">My Account</a></li>
 						<li><a href="{{ route('contact') }}">Contact Us</a></li>
+						<li><a href="{{ route('home') }}">Mitra</a></li>
 					</ul>
 				</div>
 			</div>

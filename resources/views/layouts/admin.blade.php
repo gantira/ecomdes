@@ -7,7 +7,7 @@
 	<meta name="description" content="Daengweb - Aplikasi Ecommerce">
 	<meta name="author" content="Daengweb">
     <meta name="keyword" content="aplikasi ecommerce laravel, tutorial laravel basic, belajar laravel, panduan belajar laravel">
-    
+
     @yield('title')
 
 	<link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -27,15 +27,15 @@
 
     <footer class="app-footer">
         <div>
-            <a href="https://coreui.io">Daengweb</a>
-            <span>&copy; 2018 creativeLabs.</span>
+            <a href="https://coreui.io"></a>
+            <span>&copy; {{ now()->year }}</span>
         </div>
         <div class="ml-auto">
             <span>Powered by</span>
             <a href="https://coreui.io">CoreUI</a>
         </div>
     </footer>
-    
+
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>

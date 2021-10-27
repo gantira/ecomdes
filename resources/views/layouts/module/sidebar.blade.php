@@ -7,11 +7,14 @@
         </li>
 
         <li class="nav-title">MANAJEMEN PRODUK</li>
+        @if (auth()->user()->role == 'admin')
         <li class="nav-item">
             <a class="nav-link" href="{{ route('category.index') }}">
                 <i class="nav-icon icon-drop"></i> Kategori
             </a>
         </li>
+        @endif
+        @if (auth()->user()->role == 'user')
         <li class="nav-item">
             <a class="nav-link" href="{{ route('product.index') }}">
                 <i class="nav-icon icon-drop"></i> Produk
@@ -39,5 +42,7 @@
                 </li>
             </ul>
         </li>
+        @endif
+
     </ul>
 </nav>
