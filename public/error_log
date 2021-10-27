@@ -1,0 +1,2 @@
+[31-Aug-2020 08:57:47 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home/smartass/ecomdes.smartassetsbusiness.com/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
+[31-Aug-2020 09:00:42 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home/smartass/ecomdes.smartassetsbusiness.com/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
