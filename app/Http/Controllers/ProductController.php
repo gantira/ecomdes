@@ -25,7 +25,7 @@ class ProductController extends Controller
 
     public function index()
     {
-        $product = Product::with(['category'])->orderBy('created_at', 'DESC');
+        $product = Product::with(['category'])->where('user_id', auth()->user()->id)->orderBy('created_at', 'DESC');
         if (request()->q != '') {
             $product = $product->where('name', 'LIKE', '%' . request()->q . '%');
         }
@@ -76,6 +76,7 @@ class ProductController extends Controller
 
             $product = Product::create([
                 'name' => $request->name,
+                'user_id' => auth()->user()->id,
                 'slug' => $request->name,
                 'category_id' => $request->category_id,
                 'description' => $request->description,

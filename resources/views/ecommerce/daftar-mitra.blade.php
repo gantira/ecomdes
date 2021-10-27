@@ -75,7 +75,7 @@
                             <button type="submit" value="submit" class="btn submit_btn">DAFTAR</button>
                             <div class="d-flex justify-content-between">
                                 <a href="{{ route('customer.login') }}">Back</a>
-                                <a href="{{ route('login') }}">Sudah menjadi mitra?</a>
+                                <a href="{{ route('login') }}">Login mitra?</a>
                             </div>
                         </div>
                     </form>
