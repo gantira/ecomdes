@@ -21,12 +21,12 @@
                                         <i class="icon-user"></i>
                                     </span>
                                 </div>
-                                <input class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" 
-                                    type="text" 
+                                <input class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                    type="text"
                                     name="email"
-                                    placeholder="Email Address" 
-                                    value="{{ old('email') }}" 
-                                    autofocus 
+                                    placeholder="Email Address"
+                                    value="{{ old('email') }}"
+                                    autofocus
                                     required>
                             </div>
                             <div class="input-group mb-4">
@@ -35,10 +35,10 @@
                                         <i class="icon-lock"></i>
                                     </span>
                                 </div>
-                                <input class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" 
-                                    type="password" 
+                                <input class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                    type="password"
                                     name="password"
-                                    placeholder="Password" 
+                                    placeholder="Password"
                                     required>
                             </div>
                             <div class="row">
@@ -62,7 +62,7 @@
                 </div>
                 <div class="card text-white bg-primary py-5 d-md-down-none" style="width:44%">
                     <div class="card-body text-center">
-                        
+
                     </div>
                 </div>
             </div>
